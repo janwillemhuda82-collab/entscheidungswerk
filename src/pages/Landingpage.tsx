@@ -5,7 +5,6 @@ import Problem from "../sections/Problem";
 import Solution from "../sections/Solution";
 import Proof from "../sections/Proof";
 import Pricing from "../sections/Pricing";
-import CTA from "../sections/CTA";
 import Footer from "../sections/Footer";
 import AudienceCTA from "../sections/AudienceCTA";
 
