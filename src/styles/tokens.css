@@ -1,0 +1,34 @@
+/* =========================
+   DESIGN TOKENS – SYSTEM
+   ========================= */
+
+:root {
+  /* =========================
+     BASIS
+     ========================= */
+
+  --bg-main: #fafaf8;         /* warmes Off-White */
+  --text-main: #111111;       /* Primärtext */
+  --text-muted: #5a5a5a;      /* ruhiger Sekundärtext */
+
+  /* =========================
+     AKZENT – BLAU (edel, ruhig)
+     ========================= */
+
+  --accent: #2f4a6d;          /* edles Stahlblau (Primary) */
+  --accent-soft: rgba(47, 74, 109, 0.12);
+  --accent-muted: #5c7391;    /* Linien / sekundäre Akzente */
+
+  /* =========================
+     FLÄCHEN (neutral, kein Grün)
+     ========================= */
+
+  --surface-soft: #f4f5f3;    /* Karten / Sektionen */
+  --surface-accent: #eef0f3;  /* alternierende Sektionen */
+
+  /* =========================
+     LINIEN
+     ========================= */
+
+  --border-soft: rgba(0, 0, 0, 0.08);
+}

@@ -1,6 +1,5 @@
 import { pageConfig } from "../content/page/page.config";
 
-import Header from "../sections/Header";
 import Hero from "../sections/Hero";
 import Problem from "../sections/Problem";
 import Solution from "../sections/Solution";
@@ -8,12 +7,13 @@ import Proof from "../sections/Proof";
 import Pricing from "../sections/Pricing";
 import CTA from "../sections/CTA";
 import Footer from "../sections/Footer";
+import AudienceCTA from "../sections/AudienceCTA";
 
 export default function Landingpage() {
   return (
-    <main>
-      {/* HEADER */}
-      {pageConfig.header?.enabled && <Header />}
+    <main style={{ paddingTop: "4.5rem" }}>
+
+    
 
       {/* HERO */}
       {pageConfig.hero?.enabled && (
@@ -43,19 +43,14 @@ export default function Landingpage() {
         </section>
       )}
 
-      {/* PRICING (optional) */}
-      {pageConfig.pricing?.enabled && (
-        <section id="pricing">
-          <Pricing />
+      
+      {/* ZIELGRUPPEN */}
+      {pageConfig.audienceCTA?.enabled && (
+        <section id="audience">
+          <AudienceCTA />
         </section>
       )}
-
-      {/* CTA */}
-      {pageConfig.cta?.enabled && (
-        <section id="cta">
-          <CTA />
-        </section>
-      )}
+    
 
       {/* FOOTER / RECHT */}
       {pageConfig.footer?.enabled && <Footer />}

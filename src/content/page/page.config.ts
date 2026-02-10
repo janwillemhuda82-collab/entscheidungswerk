@@ -1,44 +1,48 @@
+// src/content/page/page.config.ts
+
 export const pageConfig = {
   /* =========================
-     META / SEO
+     META (SEO-relevant)
      ========================= */
   meta: {
-    title: "Landingpage Titel",
-    description: "Kurzbeschreibung der Landingpage",
+    title:
+      "Entscheidungswerk – Struktur für Entscheidungen, Innovation & Gründung",
+    description:
+      "Entscheidungswerk ist ein strukturierter Entscheidungsrahmen für Gründer:innen und KMU. Klarheit gewinnen, Optionen prüfen und tragfähige Entscheidungen in komplexen Situationen vorbereiten.",
   },
 
   /* =========================
      HEADER
      ========================= */
-header: {
-  enabled: true,
-
-  system: {
-    title: "Landingpage Core",
-    showTitle: true,
+  header: {
+    enabled: true,
+    system: {
+      title: "Entscheidungswerk",
+      showTitle: true,
+    },
+    navigation: {
+      enabled: true,
+      items: [
+        { label: "Über das System", href: "/system" },
+        { label: "Für Gründung", href: "/gruendung" },
+        { label: "Für Unternehmen", href: "/unternehmen" },
+        { label: "Wissen", href: "/wissen" },
+        { label: "Kontakt", href: "#contact" },
+      ],
+    },
   },
-
-  navigation: {
-    enabled: false, // ← STANDARD: aus
-    items: [
-      { label: "Problem", anchor: "#problem" },
-      { label: "Lösung", anchor: "#solution" },
-      { label: "Ablauf", anchor: "#process" },
-      { label: "Tickets", anchor: "#tickets" },
-    ],
-  },
-},
 
   /* =========================
-     HERO
+     HERO (Message Match + SEO)
      ========================= */
   hero: {
     enabled: true,
-    headline: "Deine Headline",
-    subline: "Dein Subheading",
+    headline: "Klarheit für Innovationen und Entscheidungen",
+    subline:
+      "Ein strukturierter Entscheidungsrahmen für Gründer:innen und Unternehmen, wenn Ideen konkurrieren, Informationen unvollständig sind und Richtung gebraucht wird.",
     cta: {
-      text: "Jetzt starten",
-      link: "#",
+      text: "Mehr über das System erfahren",
+      link: "#audience",
     },
   },
 
@@ -47,11 +51,12 @@ header: {
      ========================= */
   problem: {
     enabled: true,
-    headline: "Das Problem",
+    headline: "Warum gute Ideen oft nicht weiterkommen",
     points: [
-      "Unklare Kommunikation",
-      "Zu viele Botschaften",
-      "Keine klare Handlung für Besucher",
+      "Zu viele Ideen konkurrieren, ohne klar bewertet zu werden",
+      "Entscheidungen werden vertagt oder aus dem Bauch getroffen",
+      "Diskussionen drehen sich im Kreis statt Orientierung zu schaffen",
+      "Es fehlt Struktur – ohne dass mehr Prozesse gewollt sind",
     ],
   },
 
@@ -60,99 +65,102 @@ header: {
      ========================= */
   solution: {
     enabled: true,
-    headline: "Die Lösung",
+    headline: "Ein klarer Rahmen statt weiterer Komplexität",
     steps: [
       {
-        title: "Klarheit schaffen",
-        text: "Das Angebot wird verständlich und fokussiert dargestellt.",
+        title: "Ordnung schaffen",
+        text:
+          "Ideen, Annahmen und Optionen werden sichtbar gemacht und in eine nachvollziehbare Struktur gebracht.",
       },
       {
-        title: "Struktur aufbauen",
-        text: "Besucher werden logisch durch die Seite geführt.",
+        title: "Relevanz klären",
+        text:
+          "Was ist wirklich entscheidungsrelevant – und was ist nur Hintergrundrauschen?",
       },
       {
-        title: "Handlung ermöglichen",
-        text: "Eine klare Call-to-Action ohne Ablenkung.",
+        title: "Entscheidungen vorbereiten",
+        text:
+          "Nicht durch Vorgaben, sondern durch Klarheit über Optionen, Konsequenzen und nächste Schritte.",
       },
     ],
   },
 
   /* =========================
-     PROOF / TRUST
+     PROOF
      ========================= */
   proof: {
     enabled: true,
-    headline: "Warum man euch vertrauen kann",
+    headline: "Entwickelt aus Praxis – nicht aus Theorie",
+    subtitle:
+      "Der Entscheidungsrahmen basiert auf realen Gründungs-, Innovations- und Transformationsprozessen – dort, wo Unsicherheit zum Alltag gehört.",
     items: [
       {
-        title: "Erfahrung",
-        text: "Relevante Expertise oder Projekterfahrung.",
+        title: "Praxisnähe",
+        text:
+          "Erfahrung aus Start-up-Coaching, Hochschulkontexten und Innovationsprojekten mit Gründer:innen und KMU.",
       },
       {
-        title: "Fakten",
-        text: "Zahlen, Daten oder nachvollziehbare Argumente.",
+        title: "Systemlogik",
+        text:
+          "Ein konsistenter Entscheidungsrahmen, der sich auf unterschiedliche Kontexte übertragen lässt – ohne jedes Mal neu zu beginnen.",
       },
       {
-        title: "Transparenz",
-        text: "Klare Aussagen ohne Marketing-Floskeln.",
+        title: "Reduktion statt Overhead",
+        text:
+          "Keine Methodenparade, keine Buzzwords – sondern Struktur, die Entscheidungsfähigkeit erhöht.",
       },
     ],
   },
 
   /* =========================
-     PRICING (optional)
+     AUDIENCE CTA
      ========================= */
-  pricing: {
-    enabled: false,
-    headline: "Preise",
-    items: [
-      {
-        title: "Basic",
-        price: "ab 499 €",
-        features: [
-          "Landingpage",
-          "Kontaktmöglichkeit",
-          "Deployment",
-        ],
-      },
-      {
-        title: "Pro",
-        price: "ab 1.290 €",
-        features: [
-          "Strategie",
-          "Struktur",
-          "Umsetzung",
-        ],
-      },
-    ],
-  },
-
-  /* =========================
-     CTA
-     ========================= */
-  cta: {
+  audienceCTA: {
     enabled: true,
-    headline: "Bereit für den nächsten Schritt?",
-    text: "Jetzt Kontakt aufnehmen oder Ticket sichern.",
-    button: {
-      text: "Jetzt handeln",
-      link: "#",
-    },
+    headline: "Der passende Einstieg – je nach Ausgangslage",
+    items: [
+      {
+        title: "Gründung & frühe Ideenphase",
+        text:
+          "Für Gründer:innen und Teams, die eine Idee haben – oder mehrere – und daraus ein tragfähiges Geschäftsmodell entwickeln wollen.",
+        bullets: [
+          "Ideen strukturieren und schärfen",
+          "Annahmen sichtbar und überprüfbar machen",
+          "Klarheit über Richtung und nächste Schritte gewinnen",
+        ],
+        cta: {
+          text: "Mehr zur Arbeit mit Gründungsteams",
+          link: "/gruendung",
+        },
+      },
+      {
+        title: "KMU & etablierte Organisationen",
+        text:
+          "Für Unternehmen ohne eigene Innovationsabteilung, die unter Veränderungsdruck stehen und Entscheidungen fundiert vorbereiten müssen.",
+        bullets: [
+          "Optionen vergleichbar machen",
+          "Entscheidungen unter Unsicherheit vorbereiten",
+          "Innovation ohne Prozess-Overhead ermöglichen",
+        ],
+        cta: {
+          text: "Mehr zur Arbeit mit Unternehmen",
+          link: "/unternehmen",
+        },
+      },
+    ],
   },
 
   /* =========================
-     FOOTER / RECHT
+     FOOTER
      ========================= */
   footer: {
-  enabled: true,
-
-  system: {
-    text: "© 2026 Landingpage Core · Modulares Grundgerüst",
+    enabled: true,
+    system: {
+      text: "© 2026 Entscheidungswerk · Struktur für klare Entscheidungen",
+    },
+    project: {
+      showImprint: true,
+      showPrivacy: true,
+    },
   },
-
-  project: {
-    showImprint: true,
-    showPrivacy: true,
-  },
-},
-}
+};

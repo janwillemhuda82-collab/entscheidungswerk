@@ -6,29 +6,33 @@ export default function Proof() {
   if (!proof?.enabled) return null;
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-24">
-      <h2 className="text-3xl font-semibold mb-12">
-        {proof.headline}
-      </h2>
+    <section className="section section-alt">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-3xl font-semibold mb-16 text-center">
+          {proof.headline}
+        </h2>
 
-      {Array.isArray(proof.items) && proof.items.length > 0 && (
-        <div className="grid md:grid-cols-3 gap-8">
-          {proof.items.map((item, index) => (
+        <div className="grid md:grid-cols-3 gap-12">
+          {proof.items.map((item) => (
             <div
-              key={index}
-              className="border border-gray-200 rounded-xl p-6"
+              key={item.title}
+              className="p-10 rounded-2xl"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid var(--border-soft)",
+              }}
             >
-              <h3 className="font-medium mb-2">
+              <h3 className="text-xl font-medium mb-4">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p>
                 {item.text}
               </p>
             </div>
           ))}
         </div>
-      )}
+      </div>
     </section>
   );
 }
