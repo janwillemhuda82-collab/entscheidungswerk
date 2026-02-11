@@ -76,9 +76,12 @@ export default function Gruendung() {
               </p>
             </div>
 
-            <a href="/system" className="btn-primary mt-8">
-              Mehr zum System erfahren
-            </a>
+            <a
+  href="mailto:kontakt@entscheidungswerk.de?subject=Testzugang%20Haus%20der%20Ideen"
+  className="btn-primary mt-8"
+>
+  Jetzt Testzugang anfragen
+</a>
           </div>
 
           {/* Kachel 3 */}

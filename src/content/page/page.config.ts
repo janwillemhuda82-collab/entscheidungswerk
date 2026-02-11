@@ -27,7 +27,7 @@ export const pageConfig = {
         { label: "Für Gründung", href: "/gruendung" },
         { label: "Für Unternehmen", href: "/unternehmen" },
         { label: "Wissen", href: "/wissen" },
-        { label: "Kontakt", href: "#contact" },
+        { label: "Kontakt", href: "mailto:kontakt@entscheidungswerk.de?subject=Anfrage%20Entscheidungswerk"  },
       ],
     },
   },
