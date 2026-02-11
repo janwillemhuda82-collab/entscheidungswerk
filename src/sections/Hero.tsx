@@ -8,15 +8,15 @@ export default function Hero() {
       className="relative overflow-hidden"
       style={{ minHeight: "70vh" }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-12 gap-12 items-center">
-        
-        {/* TEXTBEREICH */}
+      <div className="max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-12 gap-12 items-center relative">
+
+        {/* TEXT */}
         <div className="md:col-span-7 relative z-10">
           <h1 className="text-4xl md:text-5xl font-semibold mb-6">
             {pageConfig.hero.headline}
           </h1>
 
-          <p className="text-lg text-[var(--text-muted)] mb-10 max-w-xl">
+          <p className="text-lg mb-10 max-w-xl">
             {pageConfig.hero.subline}
           </p>
 
@@ -28,8 +28,8 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* BILDBEREICH */}
-        <div className="md:col-span-5 absolute md:relative top-0 right-0 h-full w-full md:w-auto">
+        {/* IMAGE */}
+        <div className="md:col-span-5 absolute md:relative top-0 right-0 h-full w-full pointer-events-none">
           <div className="relative h-full w-full">
             <img
               src="https://images.unsplash.com/photo-1520529890308-f503006340b4?q=80&w=2067&auto=format&fit=crop"
@@ -37,12 +37,12 @@ export default function Hero() {
               className="h-full w-full object-cover"
             />
 
-            {/* FADE IN DEN CONTENT */}
+            {/* FADE */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(to right, var(--bg-main) 0%, var(--bg-main) 40%, rgba(250,250,248,0.85) 55%, rgba(250,250,248,0.4) 70%, rgba(250,250,248,0) 100%)",
+                  "linear-gradient(to right, var(--bg-main) 0%, var(--bg-main) 45%, rgba(250,250,248,0.75) 60%, rgba(250,250,248,0.3) 75%, rgba(250,250,248,0) 100%)",
               }}
             />
           </div>
