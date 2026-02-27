@@ -146,37 +146,7 @@ export default function Privacy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-xl font-semibold">4. Affiliate-Links</h2>
-
-            <p>
-              Auf dieser Website können sogenannte Affiliate-Links verwendet werden. Wenn Sie auf einen
-              Affiliate-Link klicken und anschließend bei einem Partner einkaufen, können wir dafür eine
-              Provision erhalten. Für Sie entstehen dadurch keine zusätzlichen Kosten.
-            </p>
-
-            <p>
-              Beim Anklicken eines Affiliate-Links können technisch erforderliche Informationen an den
-              jeweiligen Partner übertragen werden, damit eine Zuordnung (Attribution) möglich ist.
-              Je nach Partnerprogramm können hierfür Cookies oder ähnliche Technologien auf den Seiten
-              des jeweiligen Anbieters eingesetzt werden.
-            </p>
-
-            <p>
-              <strong>Hinweis zu Cookies</strong>
-              <br />
-              Wir setzen beim reinen Besuch dieser Website keine eigenen Tracking-Cookies. Cookies oder
-              ähnliche Technologien können erst nach dem Klick auf einen externen Affiliate-Link durch
-              den jeweiligen Anbieter gesetzt werden.
-            </p>
-          </section>
-
-          {/* =========================
-              Ihre Rechte
-              ========================= */}
-          <section className="space-y-4">
-            <h2 className="text-xl font-semibold">
-              5. Ihre Rechte
-            </h2>
+            <h2 className="text-xl font-semibold">4. Ihre Rechte</h2>
 
             <p>
               Sie haben jederzeit das Recht auf Auskunft, Berichtigung,
@@ -195,7 +165,7 @@ export default function Privacy() {
               ========================= */}
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">
-              6. SSL- bzw. TLS-Verschlüsselung
+              5. SSL- bzw. TLS-Verschlüsselung
             </h2>
 
             <p>
