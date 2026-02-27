@@ -18,7 +18,7 @@ export default function Proof() {
               key={item.title}
               className="p-10 rounded-2xl"
               style={{
-                backgroundColor: "#ffffff",
+                backgroundColor: "#fafaf8",
                 border: "1px solid var(--border-soft)",
               }}
             >

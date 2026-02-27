@@ -20,7 +20,7 @@ export default function Imprint() {
             <p className="font-medium">Entscheidungswerk</p>
             <p>
               Janwillem Huda<br />
-              Kleinunternehmer<br />
+              Kleinunternehmer i. S. d. § 19 UStG<br />
               Wielandstraße 82A<br />
               44791 Bochum<br />
               Deutschland
@@ -45,9 +45,19 @@ export default function Imprint() {
 
           <section className="space-y-2">
             <h2 className="text-xl font-semibold">
-              Wirtschaftsidentifikationsnummer
+              Umsatzsteuer-Identifikationsnummer / Wirtschafts-Identifikationsnummer
             </h2>
             <p>DE441149571</p>
+          </section>
+
+          <section className="space-y-2">
+            <h2 className="text-xl font-semibold">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+            <p>
+              Janwillem Huda<br />
+              Wielandstraße 82A<br />
+              44791 Bochum<br />
+              Deutschland
+            </p>
           </section>
 
           <section className="space-y-2">
@@ -61,7 +71,7 @@ export default function Imprint() {
           </section>
 
           <p className="text-sm text-gray-500">
-            Quelle: e-recht24.de
+            Hinweis: Teile dieses Impressums basieren auf Textbausteinen (u.&nbsp;a. e-recht24.de).
           </p>
 
         </div>

@@ -19,7 +19,7 @@ export default function AudienceCTA() {
             <div
               key={item.title}
              className="card p-12 flex flex-col justify-between"
-                style={{ backgroundColor: "#ffffff" }}
+                style={{ backgroundColor: "#fafaf8" }}
             >
               {/* TEXT */}
               <div>

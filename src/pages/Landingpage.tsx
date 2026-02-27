@@ -7,6 +7,7 @@ import Proof from "../sections/Proof";
 import Pricing from "../sections/Pricing";
 import Footer from "../sections/Footer";
 import AudienceCTA from "../sections/AudienceCTA";
+import MaraTeaser from "../sections/MaraTeaser";
 
 export default function Landingpage() {
   return (
@@ -42,6 +43,10 @@ export default function Landingpage() {
         </section>
       )}
 
+      {/* MARA – LEAD MAGNET */}
+      <section id="mara">
+        <MaraTeaser />
+      </section>
       
       {/* ZIELGRUPPEN */}
       {pageConfig.audienceCTA?.enabled && (

@@ -37,37 +37,23 @@ export default function Privacy() {
             </h3>
 
             <p>
-              <strong>
-                Wer ist verantwortlich für die Datenerfassung auf dieser Website?
-              </strong>
-              <br />
-              Die Datenverarbeitung auf dieser Website erfolgt durch den
-              Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt
-              „Verantwortliche Stelle“ in dieser Datenschutzerklärung entnehmen.
-            </p>
-
-            <p>
               <strong>Wie erfassen wir Ihre Daten?</strong>
               <br />
-              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
-              mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in
-              ein Kontaktformular eingeben.
+              Beim Besuch der Website werden automatisch technische Daten erfasst (z. B.
+              Internetbrowser, Betriebssystem, Referrer-URL, Uhrzeit des Seitenaufrufs). Die
+              Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
             </p>
 
             <p>
-              Andere Daten werden automatisch oder nach Ihrer Einwilligung beim
-              Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor
-              allem technische Daten (z. B. Internetbrowser, Betriebssystem oder
-              Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
-              automatisch, sobald Sie diese Website betreten.
+              Wir verwenden auf dieser Website keine eigenen Cookies zu Analyse- oder
+              Werbezwecken. Beim reinen Aufruf der Seite werden keine Tracking-Cookies gesetzt.
             </p>
 
             <p>
               <strong>Wofür nutzen wir Ihre Daten?</strong>
               <br />
               Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung
-              der Website zu gewährleisten. Andere Daten können zur Analyse
-              Ihres Nutzerverhaltens verwendet werden.
+              der Website zu gewährleisten. Andere Daten werden nicht zur Analyse Ihres Nutzerverhaltens verwendet.
             </p>
 
             <p>
@@ -94,6 +80,24 @@ export default function Privacy() {
               Hosters gespeichert.
             </p>
 
+            <h3 className="font-medium">Server-Logfiles</h3>
+            <p>
+              Der Hosting-Anbieter erhebt und speichert bei jedem Aufruf der Website automatisch
+              Informationen in sogenannten Server-Logfiles, die Ihr Browser automatisch übermittelt.
+              Das können insbesondere IP-Adresse (ggf. gekürzt), Datum und Uhrzeit der Anfrage,
+              aufgerufene Seite/Datei, Referrer-URL, Browsertyp/-version, Betriebssystem sowie der
+              verwendete Access-Provider sein. Diese Daten sind technisch erforderlich, um die Website
+              auszuliefern, die Stabilität und Sicherheit zu gewährleisten (z.&nbsp;B. zur Abwehr von
+              Missbrauch/Angriffen) und Fehler zu analysieren.
+            </p>
+            <p>
+              <strong>Rechtsgrundlage</strong>
+              <br />
+              Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer sicheren
+              und fehlerfreien Bereitstellung der Website (Art.&nbsp;6&nbsp;Abs.&nbsp;1&nbsp;lit.&nbsp;f
+              DSGVO).
+            </p>
+
             <p>
               <strong>Hosting-Anbieter:</strong>
               <br />
@@ -106,6 +110,15 @@ export default function Privacy() {
             <p>
               Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung
               des oben genannten Dienstes geschlossen.
+            </p>
+
+            <p>
+              <strong>Datenübermittlung in Drittländer</strong>
+              <br />
+              Da unser Hosting-Anbieter seinen Sitz in den USA hat, kann eine Verarbeitung bzw.
+              Übermittlung personenbezogener Daten in ein Drittland (USA) nicht ausgeschlossen werden.
+              Wir stützen solche Übermittlungen – soweit erforderlich – auf geeignete Garantien
+              (z.&nbsp;B. Standardvertragsklauseln) und/oder anwendbare Angemessenheitsbeschlüsse.
             </p>
           </section>
 
@@ -132,12 +145,37 @@ export default function Privacy() {
             </p>
           </section>
 
+          <section className="space-y-4">
+            <h2 className="text-xl font-semibold">4. Affiliate-Links</h2>
+
+            <p>
+              Auf dieser Website können sogenannte Affiliate-Links verwendet werden. Wenn Sie auf einen
+              Affiliate-Link klicken und anschließend bei einem Partner einkaufen, können wir dafür eine
+              Provision erhalten. Für Sie entstehen dadurch keine zusätzlichen Kosten.
+            </p>
+
+            <p>
+              Beim Anklicken eines Affiliate-Links können technisch erforderliche Informationen an den
+              jeweiligen Partner übertragen werden, damit eine Zuordnung (Attribution) möglich ist.
+              Je nach Partnerprogramm können hierfür Cookies oder ähnliche Technologien auf den Seiten
+              des jeweiligen Anbieters eingesetzt werden.
+            </p>
+
+            <p>
+              <strong>Hinweis zu Cookies</strong>
+              <br />
+              Wir setzen beim reinen Besuch dieser Website keine eigenen Tracking-Cookies. Cookies oder
+              ähnliche Technologien können erst nach dem Klick auf einen externen Affiliate-Link durch
+              den jeweiligen Anbieter gesetzt werden.
+            </p>
+          </section>
+
           {/* =========================
               Ihre Rechte
               ========================= */}
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">
-              Ihre Rechte
+              5. Ihre Rechte
             </h2>
 
             <p>
@@ -157,7 +195,7 @@ export default function Privacy() {
               ========================= */}
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">
-              SSL- bzw. TLS-Verschlüsselung
+              6. SSL- bzw. TLS-Verschlüsselung
             </h2>
 
             <p>
@@ -169,7 +207,8 @@ export default function Privacy() {
           </section>
 
           <p className="text-sm text-gray-500">
-            Quelle: e-recht24.de
+            Hinweis: Teile dieser Datenschutzerklärung basieren auf Textbausteinen (u.&nbsp;a.
+            e-recht24.de).
           </p>
 
         </div>
